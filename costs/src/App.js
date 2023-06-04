@@ -13,25 +13,24 @@ function App() {
   return (
 
     <Router>
-
-
-      <Navbar />
-      
-      <Container customClass="min-Height">
-        <Routes>
-          
-          <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/projects" element={<Projects/>}></Route>
-          <Route exact path="/company" element={<Company/>}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/newproject" element={<NewProject />}></Route>
-          
-        </Routes>
-        
-      </Container>      
-      
-      <Footer/>
-
+      <ul>
+        <li>Home</li>
+        <li>Contato</li>
+      </ul>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/company">
+          <Company />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/newproject">
+          <NewProject />
+        </Route>
+      </Switch>
     </Router>
 
   );
