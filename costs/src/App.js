@@ -13,24 +13,88 @@ function App() {
   return (
 
     <Router>
-      <ul>
-        <li>Home</li>
-        <li>Contato</li>
-      </ul>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/company">
-          <Company />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/newproject">
-          <NewProject />
-        </Route>
-      </Switch>
+
+
+      <Navbar />
+      <Container customClass="minHeight">
+        <Routes>
+          
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/projects" element={<Projects/>}></Route>
+          <Route exact path="/company" element={<Company/>}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/newproject" element={<NewProject />}></Route>
+          
+        </Routes>
+        
+      </Container>      
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <h2>aaaaaaaaaaa</h2>
+    
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <h2>aaaaaaaaaaa</h2>
+      
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaaaaaaaaaa</p>
+      <h2>aaaaaaaaaaa</h2>
+
+      
+      <Footer/>
+
     </Router>
 
   );
